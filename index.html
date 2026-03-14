@@ -5,17 +5,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>GunaTech — Websites & WhatsApp Bots</title>
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
   :root {
-    --black: #0a0a0a;
-    --white: #f5f2eb;
-    --accent: #4753ff;
-    --accent2: #00d4a0;
-    --gray: #1a1a1a;
-    --gray2: #2a2a2a;
-    --muted: #888;
+    --black: #0a0a0f;
+    --white: #f0f4ff;
+    --accent: #1565C0;
+    --accent2: #C62828;
+    --gray: #111118;
+    --gray2: #1a1a24;
+    --muted: #8890a8;
     --font-head: 'Syne', sans-serif;
     --font-body: 'DM Sans', sans-serif;
   }
@@ -71,7 +72,7 @@
     text-decoration: none;
     transition: transform 0.2s, box-shadow 0.2s;
   }
-  .nav-cta:hover { transform: translateY(-1px); box-shadow: 0 6px 20px rgba(232,255,71,0.3); }
+  .nav-cta:hover { transform: translateY(-1px); box-shadow: 0 6px 20px rgba(21,101,192,0.4); }
 
   /* HERO */
   .hero {
@@ -84,8 +85,8 @@
   .hero-bg {
     position: absolute; inset: 0; z-index: 0;
     background:
-      radial-gradient(ellipse 60% 50% at 70% 50%, rgba(0,212,160,0.08) 0%, transparent 70%),
-      radial-gradient(ellipse 40% 40% at 20% 80%, rgba(232,255,71,0.06) 0%, transparent 60%);
+      radial-gradient(ellipse 60% 50% at 70% 50%, rgba(21,101,192,0.1) 0%, transparent 70%),
+      radial-gradient(ellipse 40% 40% at 20% 80%, rgba(198,40,40,0.07) 0%, transparent 60%);
   }
   .hero-grid {
     position: absolute; inset: 0; z-index: 0;
@@ -98,9 +99,9 @@
   .hero-content { position: relative; z-index: 1; max-width: 800px; }
   .hero-badge {
     display: inline-flex; align-items: center; gap: 0.5rem;
-    background: rgb(232, 233, 229);
-    border: 1px solid rgba(255, 7, 7, 0.986);
-    color: var(--accent);
+    background: rgba(21,101,192,0.1);
+    border: 1px solid rgba(21,101,192,0.4);
+    color: #90CAF9;
     padding: 0.4rem 1rem;
     border-radius: 100px;
     font-size: 0.8rem;
@@ -160,7 +161,7 @@
     display: inline-flex; align-items: center; gap: 0.5rem;
     transition: transform 0.2s, box-shadow 0.2s;
   }
-  .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 10px 30px rgba(232,255,71,0.25); }
+  .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 10px 30px rgba(21,101,192,0.35); }
   .btn-secondary {
     border: 1px solid rgba(255,255,255,0.15);
     color: var(--white);
@@ -249,9 +250,9 @@
     font-size: 1.4rem;
     margin-bottom: 1.5rem;
   }
-  .icon-green { background: rgba(0,212,160,0.15); }
-  .icon-yellow { background: rgba(232,255,71,0.15); }
-  .icon-blue { background: rgba(100,150,255,0.15); }
+  .icon-green { background: rgba(21,101,192,0.15); }
+  .icon-yellow { background: rgba(198,40,40,0.12); }
+  .icon-blue { background: rgba(21,101,192,0.15); }
   .service-card h3 {
     font-family: var(--font-head);
     font-size: 1.2rem;
@@ -311,7 +312,7 @@
     position: absolute; bottom: -30px; right: -30px;
     width: 120px; height: 120px;
     border-radius: 50%;
-    background: radial-gradient(circle, rgba(232,255,71,0.15), transparent 70%);
+    background: radial-gradient(circle, rgba(21,101,192,0.15), transparent 70%);
   }
   .about-avatar {
     width: 64px; height: 64px;
@@ -388,7 +389,7 @@
     border: 1px solid rgba(255,255,255,0.07);
     transition: border-color 0.3s;
   }
-  .process-step:hover { border-color: rgba(232,255,71,0.2); }
+  .process-step:hover { border-color: rgba(21,101,192,0.3); }
   .step-num {
     font-family: var(--font-head);
     font-size: 3.5rem;
@@ -435,7 +436,7 @@
     color: var(--white);
     transition: border-color 0.2s, transform 0.2s;
   }
-  .contact-method:hover { border-color: rgba(232,255,71,0.3); transform: translateX(4px); }
+  .contact-method:hover { border-color: rgba(21,101,192,0.4); transform: translateX(4px); }
   .contact-method-icon {
     width: 40px; height: 40px;
     border-radius: 10px;
@@ -443,9 +444,9 @@
     font-size: 1.1rem;
     flex-shrink: 0;
   }
-  .method-green { background: rgba(0,212,160,0.15); }
-  .method-yellow { background: rgba(232,255,71,0.15); }
-  .method-blue { background: rgba(100,150,255,0.15); }
+  .method-green { background: rgba(21,101,192,0.15); }
+  .method-yellow { background: rgba(198,40,40,0.12); }
+  .method-blue { background: rgba(21,101,192,0.15); }
   .contact-method-text .label { font-size: 0.75rem; color: var(--muted); text-transform: uppercase; letter-spacing: 1px; }
   .contact-method-text .value { font-weight: 500; font-size: 0.95rem; }
   .contact-form-wrap {
@@ -478,7 +479,7 @@
   }
   .form-group input:focus,
   .form-group textarea:focus,
-  .form-group select:focus { border-color: rgba(232,255,71,0.4); }
+  .form-group select:focus { border-color: rgba(21,101,192,0.5); }
   .form-group textarea { resize: vertical; min-height: 100px; }
   .form-group select option { background: var(--gray2); }
   .btn-submit {
@@ -495,7 +496,7 @@
     transition: transform 0.2s, box-shadow 0.2s;
     margin-top: 0.5rem;
   }
-  .btn-submit:hover { transform: translateY(-2px); box-shadow: 0 10px 30px rgba(232,255,71,0.25); }
+  .btn-submit:hover { transform: translateY(-2px); box-shadow: 0 10px 30px rgba(21,101,192,0.35); }
 
   /* FOOTER */
   footer {
@@ -515,6 +516,9 @@
   .footer-links { display: flex; gap: 1.5rem; }
   .footer-links a { color: var(--muted); text-decoration: none; font-size: 0.85rem; transition: color 0.2s; }
   .footer-links a:hover { color: var(--white); }
+
+  .service-icon i, .step-icon i, .contact-method-icon i { font-size: 1.3rem; }
+  .wa-float i { font-size: 1.6rem; }
 
   /* WHATSAPP FLOAT */
   .wa-float {
@@ -547,7 +551,21 @@
 
 <!-- NAV -->
 <nav>
-  <div class="nav-logo">Guna<span>Tech</span></div>
+  <div class="nav-logo">
+    <svg height="36" viewBox="0 0 320 80" xmlns="http://www.w3.org/2000/svg">
+      <rect x="0" y="4" width="60" height="60" rx="11" fill="#1565C0"/>
+      <line x1="11" y1="32" x2="23" y2="32" stroke="#90CAF9" stroke-width="1.6" stroke-linecap="round"/>
+      <polyline points="33,32 33,18 47,18" fill="none" stroke="#90CAF9" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+      <polyline points="33,32 33,46 47,46" fill="none" stroke="#90CAF9" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+      <line x1="33" y1="32" x2="51" y2="32" stroke="#EF9A9A" stroke-width="1.6" stroke-linecap="round"/>
+      <circle cx="11" cy="32" r="2.5" fill="#90CAF9"/>
+      <circle cx="47" cy="18" r="2.5" fill="#ffffff"/>
+      <circle cx="47" cy="46" r="2.5" fill="#ffffff"/>
+      <circle cx="51" cy="32" r="3" fill="#C62828"/><circle cx="51" cy="32" r="1.6" fill="#ffffff"/>
+      <circle cx="33" cy="32" r="6" fill="#ffffff"/><circle cx="33" cy="32" r="3.5" fill="#C62828"/>
+      <text font-family="'Syne',sans-serif" font-weight="700" font-size="28" fill="#1565C0" x="70" y="46">GUNA<tspan fill="#C62828">TECH</tspan></text>
+    </svg>
+  </div>
   <ul class="nav-links">
     <li><a href="#services">Services</a></li>
     <li><a href="#about">About</a></li>
@@ -594,7 +612,7 @@
   </div>
   <div class="services-grid">
     <div class="service-card">
-      <div class="service-icon icon-yellow">🌐</div>
+      <div class="service-icon icon-yellow"><i class="fa-solid fa-globe"></i></div>
       <h3>Basic Website</h3>
       <p>A clean, fast, mobile-friendly website for your business. Perfect for startups and small businesses who need an online presence fast.</p>
       <div class="service-price">$70 <span>– $120</span></div>
@@ -607,7 +625,7 @@
       </ul>
     </div>
     <div class="service-card">
-      <div class="service-icon icon-green">⚡</div>
+      <div class="service-icon icon-green"><i class="fa-solid fa-bolt"></i></div>
       <h3>Premium Website</h3>
       <p>A fully custom, polished website with advanced design, SEO optimization, and content management so you can update it yourself.</p>
       <div class="service-price">$120 <span>– $250</span></div>
@@ -620,7 +638,7 @@
       </ul>
     </div>
     <div class="service-card">
-      <div class="service-icon icon-green">💬</div>
+      <div class="service-icon icon-green"><i class="fa-brands fa-whatsapp"></i></div>
       <h3>WhatsApp Assistant Bots</h3>
       <p>Automate your customer replies, send menus, take orders, and qualify leads — 24/7 without lifting a finger.</p>
       <div class="service-price">$80 <span>– $129 setup</span></div>
@@ -632,7 +650,7 @@
       </ul>
     </div>
     <div class="service-card">
-      <div class="service-icon icon-yellow">🚀</div>
+      <div class="service-icon icon-yellow"><i class="fa-solid fa-rocket"></i></div>
       <h3>Website + Bot Bundle</h3>
       <p>The complete package — a professional website AND a WhatsApp bot working together. Best value for businesses serious about growth.</p>
       <div class="service-price">$125 <span>– $250</span></div>
@@ -696,25 +714,25 @@
   <div class="process-steps">
     <div class="process-step">
       <div class="step-num">01</div>
-      <div class="step-icon">💬</div>
+      <div class="step-icon"><i class="fa-solid fa-message"></i></div>
       <h3>You Reach Out</h3>
       <p>WhatsApp us or fill the contact form. Tell us what you need — we'll respond within a few hours.</p>
     </div>
     <div class="process-step">
       <div class="step-num">02</div>
-      <div class="step-icon">📋</div>
+      <div class="step-icon"><i class="fa-solid fa-clipboard-list"></i></div>
       <h3>We Plan Together</h3>
       <p>We discuss your goals, timeline, and budget. You get a clear quote with no surprises.</p>
     </div>
     <div class="process-step">
       <div class="step-num">03</div>
-      <div class="step-icon">⚙️</div>
+      <div class="step-icon"><i class="fa-solid fa-gears"></i></div>
       <h3>We Build</h3>
       <p>We get to work. You get progress updates and can give feedback at any point.</p>
     </div>
     <div class="process-step">
       <div class="step-num">04</div>
-      <div class="step-icon">🚀</div>
+      <div class="step-icon"><i class="fa-solid fa-rocket"></i></div>
       <h3>We Launch</h3>
       <p>Your site or bot goes live. We hand everything over and provide support going forward.</p>
     </div>
@@ -729,21 +747,21 @@
     <p>Tell us what you need. We'll get back to you within 24 hours with a plan and a quote.</p>
     <div class="contact-methods">
       <a href="https://wa.me/263783944459" class="contact-method">
-        <div class="contact-method-icon method-green">💬</div>
+        <div class="contact-method-icon method-green"><i class="fa-brands fa-whatsapp"></i></div>
         <div class="contact-method-text">
           <div class="label">WhatsApp (Fastest)</div>
           <div class="value">+263 789 344 459</div>
         </div>
       </a>
-      <a href="mailto:gunatechzw.solution@gmail.com" class="contact-method">
-        <div class="contact-method-icon method-yellow">✉️</div>
+      <a href="/cdn-cgi/l/email-protection#bddac8d3dcc9d8ded5c7ca93ced2d1c8c9d4d2d3fddad0dcd4d193ded2d0" class="contact-method">
+        <div class="contact-method-icon method-yellow"><i class="fa-solid fa-envelope"></i></div>
         <div class="contact-method-text">
           <div class="label">Email</div>
-          <div class="value">gunatechzw.solution@gmail.com</div>
+          <div class="value"><span class="__cf_email__" data-cfemail="84e3f1eae5f0e1e7ecfef3aaf7ebe8f1f0edebeac4e3e9e5ede8aae7ebe9">[email&#160;protected]</span></div>
         </div>
       </a>
       <div class="contact-method" style="cursor:default">
-        <div class="contact-method-icon method-blue">📍</div>
+        <div class="contact-method-icon method-blue"><i class="fa-solid fa-location-dot"></i></div>
         <div class="contact-method-text">
           <div class="label">Location</div>
           <div class="value">Masvingo, Zimbabwe</div>
@@ -782,7 +800,21 @@
 
 <!-- FOOTER -->
 <footer>
-  <div class="footer-logo">Guna<span>Tech</span></div>
+  <div class="footer-logo">
+    <svg height="28" viewBox="0 0 320 80" xmlns="http://www.w3.org/2000/svg">
+      <rect x="0" y="4" width="60" height="60" rx="11" fill="#1565C0"/>
+      <line x1="11" y1="32" x2="23" y2="32" stroke="#90CAF9" stroke-width="1.6" stroke-linecap="round"/>
+      <polyline points="33,32 33,18 47,18" fill="none" stroke="#90CAF9" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+      <polyline points="33,32 33,46 47,46" fill="none" stroke="#90CAF9" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+      <line x1="33" y1="32" x2="51" y2="32" stroke="#EF9A9A" stroke-width="1.6" stroke-linecap="round"/>
+      <circle cx="11" cy="32" r="2.5" fill="#90CAF9"/>
+      <circle cx="47" cy="18" r="2.5" fill="#ffffff"/>
+      <circle cx="47" cy="46" r="2.5" fill="#ffffff"/>
+      <circle cx="51" cy="32" r="3" fill="#C62828"/><circle cx="51" cy="32" r="1.6" fill="#ffffff"/>
+      <circle cx="33" cy="32" r="6" fill="#ffffff"/><circle cx="33" cy="32" r="3.5" fill="#C62828"/>
+      <text font-family="'Syne',sans-serif" font-weight="700" font-size="28" fill="#1565C0" x="70" y="46">GUNA<tspan fill="#C62828">TECH</tspan></text>
+    </svg>
+  </div>
   <p>© 2026 GunaTech · Masvingo, Zimbabwe</p>
   <div class="footer-links">
     <a href="#services">Services</a>
@@ -791,8 +823,7 @@
   </div>
 </footer>
 
-<!-- WHATSAPP FLOAT -->
-<a href="https://wa.me/263789344459" class="wa-float" title="Chat on WhatsApp">💬</a>
+<a href="https://wa.me/263783944459" class="wa-float" title="Chat on WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
 
 </body>
 </html>
